@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Survey Form</title>
+</head>
+<body>
+<form onsubmit="#">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Name<span>*</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" id="firstName" required>
+                <p class="form-text text-muted">First</p>
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="lastName"">
+                <p class="form-text text-muted">Last</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Email<span>*</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="email" class="form-control" id="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Your Experience<span>*</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col rating">
+                <input type="radio" name="rating" value="5" id="5"><label for="5" required>☆</label>
+                <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="question">Overall, how would you rate your experience with us?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>How satisfied are you with<span>*</span></p>
+            </div>
+        </div>
+        
+
+
+
+        <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td scope="row">&nbsp;</td>
+                <td class="td_centered">Very Satisfied</td>
+                <td class="td_centered">Unsatisfied</td>
+                <td class="td_centered">Neutral</td>
+                <td class="td_centered">Satisfied</td>
+                <td class="td_centered">Very Satisfied</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Purchase</td>
+                <td class="td_centered"><input type="radio" name="purchase" id=""></td>
+                <td class="td_centered"><input type="radio" name="purchase" id=""></td>
+                <td class="td_centered"><input type="radio" name="purchase" id=""></td>
+                <td class="td_centered"><input type="radio" name="purchase" id=""></td>
+                <td class="td_centered"><input type="radio" name="purchase" id=""></td>
+            </tr>
+            <tr>
+                <td scope="row">Service</td>
+                <td class="td_centered"><input type="radio" name="service" id=""></td>
+                <td class="td_centered"><input type="radio" name="service" id=""></td>
+                <td class="td_centered"><input type="radio" name="service" id=""></td>
+                <td class="td_centered"><input type="radio" name="service" id=""></td>
+                <td class="td_centered"><input type="radio" name="service" id=""></td>
+            </tr>
+            <tr>
+                <td scope="row">Company Overall</td>
+                <td class="td_centered"><input type="radio" name="overall" id=""></td>
+                <td class="td_centered"><input type="radio" name="overall" id=""></td>
+                <td class="td_centered"><input type="radio" name="overall" id=""></td>
+                <td class="td_centered"><input type="radio" name="overall" id=""></td>
+                <td class="td_centered"><input type="radio" name="overall" id=""></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+        <div class="row">
+            <div class="col">
+                <p>How likely are you to<span>*</span></p>
+            </div>
+        </div>
+        <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td scope="row">&nbsp;</td>
+                <td class="td_centered">Very Unlikely</td>
+                <td class="td_centered">Unlikely</td>
+                <td class="td_centered">Neutral</td>
+                <td class="td_centered">Likely</td>
+                <td class="td_centered">Very Likely</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Buy from us again</td>
+                <td class="td_centered"><input type="radio" name="buy" id=""></td>
+                <td class="td_centered"><input type="radio" name="buy" id=""></td>
+                <td class="td_centered"><input type="radio" name="buy" id=""></td>
+                <td class="td_centered"><input type="radio" name="buy" id=""></td>
+                <td class="td_centered"><input type="radio" name="buy" id=""></td>
+            </tr>
+            <tr>
+                <td scope="row">Recommend our product to others</td>
+                <td class="td_centered"><input type="radio" name="recommend" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend" id=""></td>
+            </tr>
+            <tr>
+                <td scope="row">Recommend our company to others</td>
+                <td class="td_centered"><input type="radio" name="recommend-company" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend-company" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend-company" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend-company" id=""></td>
+                <td class="td_centered"><input type="radio" name="recommend-company" id=""></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col">
+            <textarea class="form-control" aria-label="suggestions" rows="5"></textarea>
+        </div>
+    </div>
+    <input type="submit" value="Submit">
+    </div>
+
+</form>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

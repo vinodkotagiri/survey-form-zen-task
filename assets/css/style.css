@@ -1,0 +1,56 @@
+input{
+    margin:5px auto;
+}
+p{
+    font-weight: bold;
+}
+.text-muted,.question{
+    font-weight: normal;
+}
+.question{
+    font-style: italic;
+}
+span{
+color:red;    
+}
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .rating > input{ display:none;}
+
+.rating > label {
+  position: relative;
+    width: 1em;
+    font-size:32px;
+    color: #FFD600;
+    cursor: pointer;
+}
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+.td_centered{
+    text-align: center; 
+    vertical-align: middle;
+}
+thead{
+    border:hidden;
+}
+tbody>tr:nth-child(odd){
+    border: 1px solid lightgray;
+    border-top-left-radius: 5px;
+}
